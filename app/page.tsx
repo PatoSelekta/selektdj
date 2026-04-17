@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import Wave from "./components/Wave";
 import StatsBar from "./components/StatsBar";
 import CtaButton from "./components/CtaButton";
 
@@ -11,9 +10,6 @@ export default function HomePage() {
       <main className="relative flex flex-col min-h-screen pt-12 z-10">
         {/* Hero */}
         <section className="relative flex-1 flex flex-col justify-center px-10 overflow-hidden min-h-[calc(100vh-72px)]">
-          {/* Wave — right half */}
-          <Wave />
-
           {/* Hero content */}
           <div className="relative z-10 flex flex-col" style={{ maxWidth: "45vw" }}>
             {/* Label */}

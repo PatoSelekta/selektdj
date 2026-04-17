@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed } from "next/font/google";
+import DitherField from "./components/DitherField";
 import "./globals.css";
 
 const barlow = Barlow_Condensed({
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${barlow.variable} h-full`}>
-      <body className="min-h-full flex flex-col relative">{children}</body>
+      <body className="min-h-full flex flex-col relative">
+        <DitherField />
+        {children}
+      </body>
     </html>
   );
 }
